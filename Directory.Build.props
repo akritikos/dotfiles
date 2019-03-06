@@ -19,7 +19,6 @@
 	</PropertyGroup>
 
 	<PropertyGroup Label="Package">
-		<PackageId></PackageId>
 		<Company>Kritikos IO</Company>
 		<!-- Optional: Include PDB in the built .nupkg to enable debugging -->
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
@@ -44,23 +43,23 @@
 	<ItemGroup Condition="$(IsPackable) == 'true'">
 		<!-- Required for nugets hosted on github & github enterprise
 		Minimum version: VisualStudio 15.3 for public repos, 15.7 for private repos -->
-		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-*">
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta2-18618-05">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.SourceLink.GitLab" Version="1.0.0-*">
+		<PackageReference Include="Microsoft.SourceLink.GitLab" Version="1.0.0-beta2-18618-05">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.SourceLink.Bitbucket.Git" Version="1.0.0-*">
+		<PackageReference Include="Microsoft.SourceLink.Bitbucket.Git" Version="1.0.0-beta2-18618-05">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.SourceLink.Vsts.Git" Version="1.0.0-*">
+		<PackageReference Include="Microsoft.SourceLink.Vsts.Git" Version="1.0.0-beta2-18618-05">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.SourceLink.Tfs.Git" Version="1.0.0-*">
+		<PackageReference Include="Microsoft.SourceLink.Tfs.Git" Version="1.0.0-beta2-18618-05">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
 		</PackageReference>
