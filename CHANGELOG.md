@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 03/11/2019
+
+- Removes GitInfo requirement
+
 ## 09/10/2019
 
 - Removes commented out rules
